@@ -1,10 +1,10 @@
+import sys
 from io import BytesIO
 
 import numpy as np
 import soundfile as sf
 import speech_recognition as sr
 import whisper
-import sys
 
 device = 2
 
