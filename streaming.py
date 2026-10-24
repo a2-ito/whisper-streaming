@@ -9,7 +9,7 @@ import sys
 device = 2
 
 if __name__ == "__main__":
-    #model = whisper.load_model("base")
+    # model = whisper.load_model("base")
     model = whisper.load_model("small")
 
     recognizer = sr.Recognizer()
@@ -34,4 +34,3 @@ if __name__ == "__main__":
         sys.stdout.write("\r{}".format(result["text"]))
         sys.stdout.flush()
         print()
-
