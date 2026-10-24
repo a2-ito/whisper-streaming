@@ -1,15 +1,15 @@
+import sys
 from io import BytesIO
 
 import numpy as np
 import soundfile as sf
 import speech_recognition as sr
 import whisper
-import sys
 
 device = 2
 
 if __name__ == "__main__":
-    #model = whisper.load_model("base")
+    # model = whisper.load_model("base")
     model = whisper.load_model("small")
 
     recognizer = sr.Recognizer()
@@ -34,4 +34,3 @@ if __name__ == "__main__":
         sys.stdout.write("\r{}".format(result["text"]))
         sys.stdout.flush()
         print()
-
