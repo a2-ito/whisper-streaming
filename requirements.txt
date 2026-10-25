@@ -1,4 +1,4 @@
-openai-whisper==20230124
+openai-whisper==20250625
 soundfile==0.12.1
 SpeechRecognition==3.9.0
-PyAudio==0.2.13
+PyAudio==0.2.14
